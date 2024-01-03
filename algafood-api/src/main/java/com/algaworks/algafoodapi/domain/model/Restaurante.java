@@ -1,20 +1,21 @@
-package domain.model;
+package com.algaworks.algafoodapi.domain.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Table;
+import java.math.BigDecimal;
 import java.util.Objects;
 
 @Entity
-@Table(name = "tab_cozinhas")
-public class cozinha {
+public class Restaurante {
 
     @Id
     private Long id;
 
-    @Column(name = "nom_cozinha")
     private String nome;
+
+    @Column(name = "taxa_frete")
+    private BigDecimal taxaFrete;
 
     public Long getId() {
         return id;
@@ -32,12 +33,20 @@ public class cozinha {
         this.nome = nome;
     }
 
+    public BigDecimal getTaxaFrete() {
+        return taxaFrete;
+    }
+
+    public void setTaxaFrete(BigDecimal taxaFrete) {
+        this.taxaFrete = taxaFrete;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        cozinha cozinha = (cozinha) o;
-        return Objects.equals(id, cozinha.id);
+        Restaurante that = (Restaurante) o;
+        return Objects.equals(id, that.id);
     }
 
     @Override
