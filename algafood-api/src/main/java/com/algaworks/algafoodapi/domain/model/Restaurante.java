@@ -1,7 +1,5 @@
 package com.algaworks.algafoodapi.domain.model;
 
-import net.bytebuddy.dynamic.loading.InjectionClassLoader;
-
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Objects;
