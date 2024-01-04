@@ -14,16 +14,19 @@ public class CadastroCozinha {
     @PersistenceContext
     private EntityManager manager;
 
+    // Listar objetos no BD
     public List<Cozinha> listar() {
         return manager.createQuery("from Cozinha", Cozinha.class).getResultList();
     }
 
+    // Realizar busca por ID
     public Cozinha buscar(Long id) {
         return manager.find(Cozinha.class, id);
     }
 
+    // Salvar objeto no banco de dados
     @Transactional
-    public Cozinha adicionar(Cozinha cozinha) {
+    public Cozinha salvar(Cozinha cozinha) {
         return manager.merge(cozinha);
     }
 }
