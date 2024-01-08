@@ -2,12 +2,14 @@ package com.algaworks.algafoodapi.infraestructure.repository;
 
 import com.algaworks.algafoodapi.domain.model.Estado;
 import com.algaworks.algafoodapi.domain.repository.EstadoRepository;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 
+@Component
 public class EstadoRepositoryImpl implements EstadoRepository {
 
     @PersistenceContext
