@@ -1,9 +1,9 @@
 INSERT INTO cozinha (id, nome) VALUES (1, 'Tailandesa');
 INSERT INTO cozinha (id, nome) VALUES (2, 'Indiana');
 
-INSERT INTO restaurante (nome, taxa_frete, cozinha_id) VALUES ('Padaria Bella vista', 0.79, 1);
-INSERT INTO restaurante (nome, taxa_frete, cozinha_id) VALUES ('Mc Donalds', 1.39, 2);
-INSERT INTO restaurante (nome, taxa_frete, cozinha_id) VALUES ('Food Family', 10.99, 2);
+INSERT INTO restaurante (nome, taxa_frete, forma_pagamento_id, cozinha_id) VALUES ('Padaria Bella vista', 1, 0.79, 1);
+INSERT INTO restaurante (nome, taxa_frete, forma_pagamento_id, cozinha_id) VALUES ('Mc Donalds', 2, 1.39, 1);
+INSERT INTO restaurante (nome, taxa_frete, forma_pagamento_id, cozinha_id) VALUES ('Food Family', 3, 10.99, 1);
 
 INSERT INTO forma_pagamento (descricao) VALUES ('Dinheiro');
 INSERT INTO forma_pagamento (descricao) VALUES ('Débito');
