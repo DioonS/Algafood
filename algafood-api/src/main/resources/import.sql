@@ -24,8 +24,8 @@ INSERT INTO cidade (nome) VALUES ('Itapevi');
 INSERT INTO cidade (nome) VALUES ('Santana de Parnaiba');
 INSERT INTO cidade (nome) VALUES ('Presidente Prudente');
 
-INSERT INTO estado (nome) VALUES ('AM - Amazonas');
 INSERT INTO estado (nome) VALUES ('SP - São Paulo');
+INSERT INTO estado (nome) VALUES ('AM - Amazonas');
 INSERT INTO estado (nome) VALUES ('RJ - Rio de Janeiro');
 INSERT INTO estado (nome) VALUES ('MG - Minas Gerais');
 INSERT INTO estado (nome) VALUES ('SE - Sergipe');
