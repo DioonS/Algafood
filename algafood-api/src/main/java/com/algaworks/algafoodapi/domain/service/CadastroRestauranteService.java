@@ -29,4 +29,15 @@ public class CadastroRestauranteService {
 
         return restauranteRepository.salvar(restaurante);
     }
+
+    public Restaurante atualizar(Long restauranteId, Restaurante restaurante) {
+
+        if (restauranteId == null) {
+            throw new EntidadeNaoEncontradaException(String.format("Não existe restaurante com o código %d", restauranteId));
+        }
+
+        restaurante.setId(restauranteId);
+
+        return restauranteRepository.salvar(restaurante);
+    }
 }
