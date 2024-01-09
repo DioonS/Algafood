@@ -58,7 +58,7 @@ public class EstadoController {
     @DeleteMapping("/{estadoId}")
     public ResponseEntity<Estado> remover(@PathVariable Long estadoId) {
         Estado estado = estadoRepository.buscar(estadoId);
-        
+
         try {
             if (estado != null) {
                 estadoRepository.remover(estado);
